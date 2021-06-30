@@ -23,7 +23,7 @@
 
 Post your Bot's Server Count
 ```js
-const { Boat } = require("./build");
+const { Boat } = require("discordboats");
 const boat = new Boat();
 
 boat.on("ready", () => {
