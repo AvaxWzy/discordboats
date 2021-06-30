@@ -1,0 +1,7 @@
+# Folders
+lib
+node_modules
+
+# Files
+index.js
+yarn.lock

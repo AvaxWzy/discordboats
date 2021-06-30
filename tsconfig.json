@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "ES2019",
+        "module": "commonjs",
+        "pretty": true,
+        "declaration": true,
+        "outDir": "build",
+        "noUnusedLocals": true,
+        "esModuleInterop": true
+    },
+    "include": ["lib/src/**/**/*", "lib/index.ts"],
+    "exclude": ["node_modules"]
+}
