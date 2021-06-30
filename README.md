@@ -35,7 +35,7 @@ boat.on("ready", () => {
 
 boat.on("posted", amount => {
 
-    console.log("Server count posed - " + number);
+    console.log("Server count posted - " + number);
 });
 
 boat.login("Your Api Token");
@@ -73,7 +73,7 @@ console.log(`Name: ${bot.name}`);
 
 Check if a user has voted your bot
 ```js
-const { Boat } = require("./build");
+const { Boat } = require("discordboats");
 const boat = new Boat();
 
 /*boat.users.isVoted("Your Bot ID", "User ID").then(x => {
