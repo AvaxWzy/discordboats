@@ -26,14 +26,14 @@ Post your Bot's Server Count
 const { Boat } = require("discordboats");
 const boat = new Boat();
 
-boat.on("ready", () => {
+boat.on("Ready", () => {
 
     console.log("Ready");
 
     boat.postServers("1234", 23);
 });
 
-boat.on("posted", amount => {
+boat.on("Posted", amount => {
 
     console.log("Server count posted - " + number);
 });
