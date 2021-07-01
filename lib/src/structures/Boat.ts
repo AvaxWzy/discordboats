@@ -4,8 +4,8 @@ import { Api } from "../rest/Api";
 
 export interface Boat {
 
-    on(event: "ready");
-    on(event: "posted", number);
+    on(event: "Ready");
+    on(event: "Posted", number);
 };
 
 export class Boat extends EventEmitter {
@@ -36,7 +36,7 @@ export class Boat extends EventEmitter {
 
             try {
             this.token = token;
-            this.emit("ready");
+            this.emit("Ready");
 
             resolve(this);
 
@@ -66,7 +66,7 @@ export class Boat extends EventEmitter {
 
         return new Promise(async (resolve, reject) => {
 
-            this.emit("posted", servers);
+            this.emit("Posted", servers);
 
             await fetch(this.url + `/bot/${id}`, {
                 method: "POST",

@@ -1,13 +1,13 @@
 
 interface Data {
-    id: number;
-    name: string;
-    website: string;
-    twitter: string;
-    github: string;
-    instagram: string;
-    reddit: string;
-    bio: string;
+    user_id: number;
+    user_name: string;
+    user_website: string;
+    user_twitter: string;
+    user_github: string;
+    user_instagram: string;
+    user_reddit: string;
+    user_bio: string;
 }
 
 export class User {
@@ -30,21 +30,21 @@ export class User {
 
     constructor(data?: Data) {
 
-        this.id = data.id;
+        this.id = data.user_id;
 
-        this.name = data.name;
+        this.name = data.user_name;
 
-        this.website = data.website;
+        this.website = data.user_website;
 
-        this.twitter = data.twitter;
+        this.twitter = data.user_twitter;
 
-        this.github = data.github;
+        this.github = data.user_github;
 
-        this.instagram = data.instagram;
+        this.instagram = data.user_instagram;
 
-        this.reddit = data.reddit;
+        this.reddit = data.user_reddit;
 
-        this.bio = data.bio;
+        this.bio = data.user_bio;
 
     };
 };

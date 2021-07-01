@@ -8,6 +8,6 @@
         "noUnusedLocals": true,
         "esModuleInterop": true
     },
-    "include": ["lib/src/**/**/*", "lib/index.ts"],
-    "exclude": ["node_modules"]
+    "include": ["lib/**/**/*"],
+    "exclude": ["node_modules", "build"]
 }
