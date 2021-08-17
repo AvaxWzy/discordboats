@@ -1,6 +1,8 @@
 import { EventEmitter } from "events";
 import fetch from "node-fetch";
 import { Api } from "../rest/Api";
+import { User } from "./User"
+import { Bot } from "./Bot"
 
 export interface Boat {
 
@@ -13,6 +15,8 @@ export class Boat extends EventEmitter {
     private token: string;
     private url: string;
     public users: Api;
+    public bot: Bot;
+    public user: User;
 
     constructor() {
         super();
@@ -24,6 +28,9 @@ export class Boat extends EventEmitter {
         this.users = new Api({
             url: this.url
         });
+        
+        this.bot = null || undefined;
+        this.user = null || undefined;
     };
 
     login(token?: string) {
